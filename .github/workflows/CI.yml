@@ -53,11 +53,9 @@ jobs:
         # only when running in node v16
         if: matrix.node == 16
         uses: codecov/codecov-action@v2
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: 'Consume changesets'
-        if: github.event_name == 'push' && github.repository == 'ivandotv/graphql-no-alias' && matrix.node == 16 && github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && github.repository == 'ivandotv/graphql-no-batched-queries' && matrix.node == 16 && github.ref == 'refs/heads/main'
         uses: changesets/action@v1
         id: 'changesets'
         with:
