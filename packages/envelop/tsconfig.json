@@ -21,9 +21,9 @@
   },
   "include": ["packages/no-alias/src/**/*"],
   "exclude": [
-    "**/node_modules",
-    "packages/no-alias/src/**/__tests__",
-    "packages/no-alias/src/**/*.test.ts",
-    "packages/no-alias/src/**/*.spec.ts"
+    "**/node_modules"
+    // "packages/no-alias/src/**/__tests__",
+    // "packages/no-alias/src/**/*.test.ts",
+    // "packages/no-alias/src/**/*.spec.ts"
   ]
 }
