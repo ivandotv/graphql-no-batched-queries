@@ -1,22 +1,23 @@
 {
-  "name": "graphql-no-alias",
-  "version": "2.0.0",
+  "name": "graphql-no-batched-queries",
+  "version": "0.0.0",
   "private": false,
-  "description": "No alias directive for graphql mutation and query types. It can limit the amount of alias fields that can be used for queries and mutations. Preventing batch attacks.",
+  "description": "Graphql validation do disable batched queries and mutations.",
   "keywords": [
     "graphql",
     "graphql directive",
     "graphql validation",
-    "graphql alias",
-    "graphql query alias",
-    "graphql mutation alias"
+    "graphql batching",
+    "graphql batched",
+    "graphql batch query",
+    "graphql batch mutation"
   ],
   "author": "ivandotv",
   "license": "MIT",
-  "main": "./dist/prod/graphql-no-alias.js",
+  "main": "./dist/prod/index.js",
   "exports": {
-    "import": "./dist/prod/graphql-no-alias.esm.js",
-    "require": "./dist/prod/graphql-no-alias.js"
+    "import": "./dist/prod/index.esm.js",
+    "require": "./dist/prod/index.js"
   },
   "types": "./dist/types/index.d.ts",
   "files": [
@@ -39,12 +40,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivandotv/graphql-no-alias.git"
+    "url": "git+https://github.com/ivandotv/graphql-no-batched-queries.git"
   },
   "bugs": {
-    "url": "https://github.com/ivandotv/graphql-no-alias/issues"
+    "url": "https://github.com/ivandotv/graphql-no-batched-queries/issues"
   },
-  "homepage": "https://github.com/ivandotv/graphql-no-alias#readme",
+  "homepage": "https://github.com/ivandotv/graphql-no-batched-queries#readme",
   "peerDependencies": {
     "graphql": "^16.2.0"
   },

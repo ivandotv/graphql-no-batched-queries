@@ -3,7 +3,7 @@ coverage:
     project:
       default:
         target: auto
-      graphql-no-alias:
+      graphql-no-batched-queries:
         target: auto
         flags:
           - graphql-no-alias
@@ -22,7 +22,7 @@ comment:
 flags:
   graphql-no-alias:
     paths:
-      - packages/graphql-no-alias/
+      - packages/graphql-no-batched-queries/
     carryforward: true
   envelop:
     paths:
