@@ -1,6 +1,6 @@
 import { assertSingleExecutionValue, createTestkit } from '@envelop/testing'
 import { buildSchema } from 'graphql'
-import { useNoAlias } from '../'
+import { useNoBatchedQueries } from '../'
 
 describe('No Alias plugin', () => {
   test('Do not allow double query', async () => {
@@ -24,7 +24,7 @@ describe('No Alias plugin', () => {
         }
       }
     `
-    const testkit = createTestkit([useNoAlias()], schema)
+    const testkit = createTestkit([useNoBatchedQueries()], schema)
     const result = await testkit.execute(query)
     assertSingleExecutionValue(result)
     expect(result.data).toBeUndefined()
@@ -68,7 +68,10 @@ describe('No Alias plugin', () => {
       }
     `
 
-    const testkit = createTestkit([useNoAlias({ allow: defaultAllow })], schema)
+    const testkit = createTestkit(
+      [useNoBatchedQueries({ allow: defaultAllow })],
+      schema
+    )
     const result = await testkit.execute(query)
     assertSingleExecutionValue(result)
     expect(result.data).toBeUndefined()
