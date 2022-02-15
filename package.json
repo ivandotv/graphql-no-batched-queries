@@ -7,7 +7,6 @@
     "test": "pnpm multi run test --workspace-concurrency 1",
     "test:ci": "pnpm multi run test:ci --workspace-concurrency 1",
     "lint": "pnpm multi run lint",
-    "lint:ci": "pnpm multi run lint:ci",
     "build": "pnpm multi run build",
     "prepare": "husky install",
     "release": "pnpm multi run prepublishOnly --workspace-concurrency 1 && pnpm changeset publish"

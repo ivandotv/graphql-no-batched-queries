@@ -25,16 +25,11 @@
     "src"
   ],
   "scripts": {
-    "lint": "eslint --fix \"src/**/\"",
-    "lint:check": "eslint \"src/**/\"",
-    "lint:ci": "pnpm lint:check && pnpm format:check",
-    "format": "prettier --write src/**",
-    "format:check": "prettier --check src/**",
+    "lint": "eslint \"src/**/\"",
     "test": "NODE_ENV=test jest --verbose --coverage --no-cache",
     "test:watch": "NODE_ENV=test jest --watch",
     "test:ci": "NODE_ENV=test jest --runInBand --ci --coverage --coverageDirectory=coverage",
-    "build:prod": "NODE_ENV=production microbundle --tsconfig ./tsconfig.json  --format modern,cjs --target node --output dist/prod",
-    "build": "rm -rf ./dist && pnpm build:prod",
+    "build": "rm -rf dist && NODE_ENV=production microbundle --tsconfig ./tsconfig.json  --format modern,cjs --target node --output dist/prod",
     "prepublishOnly": "pnpm build",
     "release": "pnpm run prepublishOnly && pnpm changeset publish"
   },

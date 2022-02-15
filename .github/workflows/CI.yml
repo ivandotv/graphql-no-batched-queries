@@ -37,7 +37,7 @@ jobs:
 
       - name: Lint source
         run: |
-          pnpm lint:ci
+          pnpm lint
 
       - name: Build package
         run: |
