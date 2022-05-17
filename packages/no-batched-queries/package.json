@@ -1,6 +1,6 @@
 {
   "name": "graphql-no-batched-queries",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "description": "Graphql validation to disable batched queries and mutations.",
   "keywords": [
