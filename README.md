@@ -1,7 +1,7 @@
 # GraphQl No Batched Queries Validation
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ivandotv/graphql-no-batched-queries/Test)
-![Codecov](https://img.shields.io/codecov/c/gh/ivandotv/graphql-no-batched-queries)
+[![Test](https://github.com/ivandotv/graphql-no-batched-queries/actions/workflows/CI.yml/badge.svg)](https://github.com/ivandotv/graphql-no-batched-queries/actions/workflows/CI.yml)
+[![Codecov](https://img.shields.io/codecov/c/gh/ivandotv/graphql-no-batched-queries)](https://app.codecov.io/gh/ivandotv/graphql-no-batched-queries)
 [![GitHub license](https://img.shields.io/github/license/ivandotv/graphql-no-batched-queries)](https://github.com/ivandotv/graphql-no-batched-queries/blob/main/LICENSE)
 
 <!-- toc -->
