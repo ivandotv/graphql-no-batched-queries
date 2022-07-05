@@ -6,7 +6,7 @@ This package is an [envelop plugin](https://www.envelop.dev) version of
 ## Install
 
 ```sh
-npm Install envelop-no-batched-queries
+npm i envelop-no-batched-queries
 ```
 
 ## Usage
