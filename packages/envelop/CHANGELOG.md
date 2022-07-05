@@ -1,5 +1,13 @@
 # envelop-no-batched-queries
 
+## 3.0.1
+
+### Patch Changes
+
+- 1d29b69: Update README file.
+- Updated dependencies [3610b8f]
+  - graphql-no-batched-queries@2.0.1
+
 ## 3.0.0
 
 ### Major Changes

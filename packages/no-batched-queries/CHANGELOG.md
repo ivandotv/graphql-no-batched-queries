@@ -1,5 +1,11 @@
 # graphql-no-batched-queries
 
+## 2.0.1
+
+### Patch Changes
+
+- 3610b8f: Publish README file
+
 ## 2.0.0
 
 ### Major Changes
