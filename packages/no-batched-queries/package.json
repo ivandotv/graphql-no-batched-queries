@@ -32,8 +32,9 @@
     "test:watch": "NODE_ENV=test jest --watch",
     "test:ci": "NODE_ENV=test jest --runInBand --ci --coverage --coverageDirectory=coverage",
     "build": "rm -rf dist && NODE_ENV=production microbundle --tsconfig ./tsconfig.json  --format modern,cjs  --target node --output dist/prod/index.js",
-    "prepublishOnly": "pnpm build",
-    "release": "pnpm run prepublishOnly && pnpm changeset publish"
+    "prepublishOnly": "pnpm build && pnpm cp",
+    "release": "pnpm run prepublishOnly && pnpm changeset publish",
+    "cp": "shx cp ../../README.md ./"
   },
   "repository": {
     "type": "git",
