@@ -1,7 +1,9 @@
 import { ASTVisitor, FieldNode, GraphQLError, ValidationContext } from 'graphql'
-
 //https://graphql.org/graphql-js/language/#visitor
 
+/**
+ * Custom GraphQLError instance signature
+ */
 export type ErrorFn = typeof createErrorMsg
 
 export type Config = {
