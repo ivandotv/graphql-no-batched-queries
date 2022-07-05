@@ -1,5 +1,11 @@
 # graphql-no-batched-queries
 
+## 2.0.2
+
+### Patch Changes
+
+- ed23a01: Add more code comments
+
 ## 2.0.1
 
 ### Patch Changes

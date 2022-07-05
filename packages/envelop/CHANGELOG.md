@@ -1,5 +1,14 @@
 # envelop-no-batched-queries
 
+## 3.0.2
+
+### Patch Changes
+
+- 8b3bab6: Docs: grammar fix
+- ed23a01: Add more code comments
+- Updated dependencies [ed23a01]
+  - graphql-no-batched-queries@2.0.2
+
 ## 3.0.1
 
 ### Patch Changes
