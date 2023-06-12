@@ -52,7 +52,7 @@ jobs:
       - name: Generate Code Coverage
         # only when running in node v16
         if: matrix.node == 16
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
 
       - name: 'Consume changesets'
         if: github.event_name == 'push' && github.repository == 'ivandotv/graphql-no-batched-queries' && matrix.node == 16 && github.ref == 'refs/heads/main'
